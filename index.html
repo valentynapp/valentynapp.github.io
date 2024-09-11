@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentyn App</title>
+    <title>Valentyn - Find Romantic Places</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
@@ -76,6 +76,10 @@
             background: linear-gradient(45deg, var(--primary-color), var(--background-color));
         }
 
+        .hero-content {
+            max-width: 600px;
+        }
+
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
@@ -92,39 +96,17 @@
             display: inline-block;
             background-color: var(--accent-color);
             color: var(--background-color);
-            padding: 12px 24px;
+            padding: 15px 30px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .cta-button:hover {
             transform: scale(1.05);
             background-color: #FF8C8C;
-        }
-
-        .features {
-            padding: 100px 0;
-            background-color: var(--background-color);
-        }
-
-        .feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-
-        .feature-icon {
-            font-size: 48px;
-            margin-right: 30px;
-            color: var(--accent-color);
-        }
-
-        .feature-text h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: var(--secondary-color);
         }
 
         footer {
@@ -160,8 +142,7 @@
         <nav class="container">
             <div class="logo">Valentyn</div>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#" onclick="alert('Download links would be here')">Download</a>
+                <a href="#" class="cta-button">Download</a>
             </div>
         </nav>
     </header>
@@ -169,34 +150,10 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 data-aos="fade-up">Welcome to Valentyn</h1>
-                <p data-aos="fade-up" data-aos-delay="200">Connect with your loved ones like never before</p>
-                <a href="#" class="cta-button" data-aos="fade-up" data-aos-delay="400">Get Started</a>
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <div class="feature" data-aos="fade-right">
-                    <div class="feature-icon">❤️</div>
-                    <div class="feature-text">
-                        <h2>Heartfelt Connections</h2>
-                        <p>Create meaningful bonds with your partner through our intuitive interface.</p>
-                    </div>
-                </div>
-                <div class="feature" data-aos="fade-left">
-                    <div class="feature-icon">🎁</div>
-                    <div class="feature-text">
-                        <h2>Surprise Gifts</h2>
-                        <p>Send virtual gifts and surprises to brighten your loved one's day.</p>
-                    </div>
-                </div>
-                <div class="feature" data-aos="fade-right">
-                    <div class="feature-icon">🔒</div>
-                    <div class="feature-text">
-                        <h2>Private & Secure</h2>
-                        <p>Your love is precious. We ensure your conversations remain private and secure.</p>
-                    </div>
+                <div class="hero-content">
+                    <h1 data-aos="fade-up">VALENTYN</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">Find the perfect spots for your romantic adventures with Valentyn</p>
+                    <a href="#" class="cta-button" data-aos="fade-up" data-aos-delay="400">Download Now</a>
                 </div>
             </div>
         </section>
