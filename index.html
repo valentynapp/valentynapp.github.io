@@ -3,178 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentyn - Find Romantic Places</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <title>Nomadeus Capital Group</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-        :root {
-            --primary-color: #F5F5F5; /* Off-white */
-            --secondary-color: #333333; /* Dark gray for text */
-            --accent-color: #FF6B6B; /* Soft red for accents */
-            --background-color: #FFFFFF; /* Pure white for contrast */
+        .gradient-text {
+            background: linear-gradient(90deg, #9333ea, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .gradient-bg {
+            background: linear-gradient(135deg, #9333ea, #3b82f6);
         }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--secondary-color);
-            background-color: var(--primary-color);
+        .gradient-light-bg {
+            background: linear-gradient(135deg, rgb(243 232 255), rgb(219 234 254));
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .hover-scale {
+            transition: transform 0.3s ease;
         }
-
-        header {
-            background-color: var(--background-color);
-            color: var(--secondary-color);
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--accent-color);
-        }
-
-        .nav-links a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            margin-left: 20px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(45deg, var(--primary-color), var(--background-color));
-        }
-
-        .hero-content {
-            max-width: 600px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: var(--secondary-color);
-        }
-
-        .hero p {
-            font-size: 24px;
-            margin-bottom: 30px;
-            color: var(--secondary-color);
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--background-color);
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
+        .hover-scale:hover {
             transform: scale(1.05);
-            background-color: #FF8C8C;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: var(--accent-color);
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .floating {
-            animation: float 3s ease-in-out infinite;
         }
     </style>
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">Valentyn</div>
-            <div class="nav-links">
-                <a href="#" class="cta-button">Download</a>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50 border-b">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="text-xl font-bold gradient-text">Nomadeus Capital Group</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#products" class="text-gray-600 hover:text-purple-600">Products</a>
+                <a href="#about" class="text-gray-600 hover:text-purple-600">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-purple-600">Contact</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 data-aos="fade-up">VALENTYN</h1>
-                    <p data-aos="fade-up" data-aos-delay="200">Find the perfect spots for your romantic adventures with Valentyn</p>
-                    <a href="#" class="cta-button" data-aos="fade-up" data-aos-delay="400">Download Now</a>
+    <!-- Hero Section -->
+    <section class="gradient-light-bg pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+                        Innovation Through Technology
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl">
+                        Creating revolutionary mobile applications that shape the future of digital experiences.
+                    </p>
+                    <a href="#products" class="gradient-bg text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:opacity-90">
+                        Explore Our Apps 
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex-1">
+                    <div class="gradient-bg rounded-2xl p-8 aspect-square flex items-center justify-center shadow-lg">
+                        <svg class="w-32 h-32 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12" y2="18"></line>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Valentyn App. All rights reserved.</p>
-            <p>
-                <a href="terms.html">Terms and Conditions</a> | 
-                <a href="privacy.html">Privacy Policy</a>
+    <!-- Featured Product -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 order-2 md:order-1">
+                    <h2 class="text-4xl font-bold mb-6 text-purple-600">VALENTYN</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Experience our flagship mobile application, designed to revolutionize the way people connect and interact.
+                        Download now on the App Store and join the future of digital relationships.
+                    </p>
+                    <a href="https://apps.apple.com/es/app/valentyn/id6670407223" 
+                       class="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 font-medium hover-scale">
+                        Download Now 
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex-1 order-1 md:order-2">
+                    <div class="gradient-light-bg rounded-2xl p-8 aspect-square flex items-center justify-center hover-scale">
+                        <svg class="w-32 h-32 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12" y2="18"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 gradient-light-bg">
+        <div class="container mx-auto px-4 max-w-6xl text-center">
+            <h2 class="text-3xl font-bold mb-6 gradient-text">About Nomadeus Capital Group</h2>
+            <p class="text-xl mb-8 text-gray-600 max-w-3xl mx-auto">
+                We are a forward-thinking technology company focused on creating innovative mobile applications 
+                that push the boundaries of what's possible in the digital world.
             </p>
         </div>
-    </footer>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    </script>
+    <!-- Contact -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 max-w-6xl text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-xl mb-8 text-white/90">
+                Interested in learning more about our innovative mobile applications?
+            </p>
+            <a href="mailto:contact@nomadeuscapital.com" class="bg-white text-purple-600 px-6 py-3 rounded-full inline-block hover:bg-gray-100">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-gray-600">
+                    © 2024 Nomadeus Capital Group. All rights reserved.
+                </div>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="text-gray-600 hover:text-purple-600">Privacy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-purple-600">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
