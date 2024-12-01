@@ -3,76 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentyn - Términos de Servicio</title>
+    <title>Términos de Servicio - Valentyn</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-        :root {
-            --primary-color: #F5F5F5;
-            --secondary-color: #333333;
-            --accent-color: #FF6B6B;
-            --background-color: #FFFFFF;
+        .gradient-text {
+            background: linear-gradient(90deg, #9333ea, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--secondary-color);
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            color: var(--accent-color);
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: var(--secondary-color);
-            font-size: 1.5em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        .date {
-            color: #777;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        .contact {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
+        .gradient-bg {
+            background: linear-gradient(135deg, #9333ea, #3b82f6);
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Términos de Servicio</h1>
-        <p class="date">Fecha de Vigencia: 1 de junio de 2024</p>
-        <h2>¡Bienvenido a Valentyn!</h2>
-        <p>Estos Términos de Servicio regulan el uso de la aplicación móvil Valentyn.</p>
-        <h2>Aceptación de los Términos</h2>
-        <p>Al acceder o usar la app de Valentyn, aceptas estar sujeto a estos Términos de Servicio y a nuestra Política de Privacidad. Si no estás de acuerdo con estos términos, no puedes usar la app.</p>
-        <h2>Conducta del Usuario</h2>
-        <p>Aceptas usar la app en cumplimiento con todas las leyes y regulaciones aplicables. No puedes participar en actividades ilegales o prohibidas.</p>
-        <h2>Derechos de Propiedad Intelectual</h2>
-        <p>El contenido y los materiales disponibles a través de la app Valentyn están protegidos por leyes de propiedad intelectual. No puedes modificar, reproducir o distribuir ningún contenido de la app sin permiso.</p>
-        <h2>Descargo de Responsabilidad de Garantías</h2>
-        <p>La app Valentyn se proporciona "tal cual" y "según disponibilidad", sin garantías de ningún tipo, ya sean expresas o implícitas. No garantizamos que la app esté libre de errores o interrupciones.</p>
-        <h2>Limitación de Responsabilidad</h2>
-        <p>En la medida máxima permitida por la ley, Valentyn y sus afiliados no serán responsables por daños indirectos, incidentales, especiales, consecuentes o punitivos, ni por pérdidas de ganancias o ingresos.</p>
-        <h2>Cambios en los Términos</h2>
-        <p>Podemos actualizar estos Términos de Servicio de vez en cuando. Cualquier cambio será efectivo inmediatamente después de su publicación. Tu uso continuado de la app después de la publicación de los cambios constituye tu aceptación de los términos revisados.</p>
-        <div class="contact">
-            <h2>Contáctanos</h2>
-            <p>Si tienes alguna pregunta sobre estos Términos de Servicio, contáctanos en contactvalentyn@gmail.com.</p>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white border-b">
+        <div class="container mx-auto px-4 py-4">
+            <a href="index.html" class="text-xl font-bold gradient-text">Nomadeus Capital Group</a>
+        </div>
+    </nav>
 
+    <!-- Content -->
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+        <div class="bg-white rounded-lg shadow-sm p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-6 gradient-text">Términos de Servicio</h1>
+            
+            <p class="text-gray-500 mb-8">Fecha de Vigencia: 1 de junio de 2024</p>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">¡Bienvenido a Valentyn!</h2>
+                <p class="text-gray-600 leading-relaxed">Estos Términos de Servicio regulan el uso de la aplicación móvil Valentyn.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Aceptación de los Términos</h2>
+                <p class="text-gray-600 leading-relaxed">Al acceder o usar la app de Valentyn, aceptas estar sujeto a estos Términos de Servicio y a nuestra Política de Privacidad. Si no estás de acuerdo con estos términos, no puedes usar la app.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Conducta del Usuario</h2>
+                <p class="text-gray-600 leading-relaxed">Aceptas usar la app en cumplimiento con todas las leyes y regulaciones aplicables. No puedes participar en actividades ilegales o prohibidas.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Derechos de Propiedad Intelectual</h2>
+                <p class="text-gray-600 leading-relaxed">El contenido y los materiales disponibles a través de la app Valentyn están protegidos por leyes de propiedad intelectual. No puedes modificar, reproducir o distribuir ningún contenido de la app sin permiso.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Descargo de Responsabilidad de Garantías</h2>
+                <p class="text-gray-600 leading-relaxed">La app Valentyn se proporciona "tal cual" y "según disponibilidad", sin garantías de ningún tipo, ya sean expresas o implícitas. No garantizamos que la app esté libre de errores o interrupciones.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Limitación de Responsabilidad</h2>
+                <p class="text-gray-600 leading-relaxed">En la medida máxima permitida por la ley, Valentyn y sus afiliados no serán responsables por daños indirectos, incidentales, especiales, consecuentes o punitivos, ni por pérdidas de ganancias o ingresos.</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Cambios en los Términos</h2>
+                <p class="text-gray-600 leading-relaxed">Podemos actualizar estos Términos de Servicio de vez en cuando. Cualquier cambio será efectivo inmediatamente después de su publicación. Tu uso continuado de la app después de la publicación de los cambios constituye tu aceptación de los términos revisados.</p>
+            </section>
+
+            <section class="p-6 bg-gray-50 rounded-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Contáctanos</h2>
+                <p class="text-gray-600 leading-relaxed">Si tienes alguna pregunta sobre estos Términos de Servicio, contáctanos en <a href="mailto:contactvalentyn@gmail.com" class="text-blue-500 hover:text-blue-600">contactvalentyn@gmail.com</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-500">
+            © 2024 Nomadeus Capital Group. Todos los derechos reservados.
+        </div>
+    </footer>
 </body>
 </html>
-      
