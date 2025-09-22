@@ -1,87 +1,210 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentyn - Política de Privacidad</title>
+    <title>Nomad Browser - Privacy Policy</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
         :root {
-            --primary-color: #F5F5F5;
+            --primary-color: #667eea;
             --secondary-color: #333333;
-            --accent-color: #FF6B6B;
+            --accent-color: #764ba2;
             --background-color: #FFFFFF;
+            --text-light: #777;
         }
-
+        
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: var(--secondary-color);
-            background-color: var(--background-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             margin: 0;
             padding: 0;
+            min-height: 100vh;
         }
-
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
+            background-color: var(--background-color);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-
-        h1 {
-            color: var(--accent-color);
-            font-size: 2.5em;
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
             margin-bottom: 20px;
         }
-
+        
+        .app-logo {
+            width: 60px;
+            height: 60px;
+        }
+        
+        h1 {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+        
         h2 {
-            color: var(--secondary-color);
+            color: var(--primary-color);
             font-size: 1.5em;
             margin-top: 30px;
             margin-bottom: 15px;
+            font-weight: 600;
         }
-
+        
         p {
             margin-bottom: 15px;
+            text-align: justify;
         }
-
+        
         .date {
-            color: #777;
+            color: var(--text-light);
             font-style: italic;
             margin-bottom: 30px;
+            text-align: center;
         }
-
+        
         .contact {
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #ddd;
+            border-top: 2px solid #eee;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 30px;
+            border-radius: 15px;
+        }
+        
+        .contact h2 {
+            margin-top: 0;
+        }
+        
+        .email-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .email-link:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .logo-section {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Política de Privacidad</h1>
-        <p class="date">Fecha de Vigencia: 1 de junio de 2024</p>
-
-        <h2>¡Bienvenido a Valentyn!</h2>
-        <p>Valoramos tu privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos y compartimos información cuando usas nuestra aplicación móvil.</p>
-
-        <h2>Información que Recopilamos</h2>
-        <p>Recopilamos la información que nos proporcionas directamente, como cuando creas una cuenta o utilizas ciertas funciones de la app. También podemos recopilar información automáticamente cuando usas la app, como tus datos de uso e información del dispositivo.</p>
-
-        <h2>Cómo Usamos tu Información</h2>
-        <p>Utilizamos la información que recopilamos para ofrecer y mejorar nuestros servicios, personalizar tu experiencia y comunicarnos contigo. También podemos usar tu información para cumplir con obligaciones legales y hacer cumplir nuestras políticas.</p>
-
-        <h2>Compartir tu Información</h2>
-        <p>Podemos compartir tu información con proveedores de servicios externos que nos ayuden a operar nuestra app, realizar análisis o proporcionar soporte al cliente. También podemos compartir tu información según lo exija la ley o para proteger nuestros derechos.</p>
-
-        <h2>Tus Opciones</h2>
-        <p>Puedes gestionar la configuración de tu cuenta y tus preferencias dentro de la app. También puedes optar por eliminar tu cuenta o desactivar la recopilación de ciertos datos.</p>
-
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="header">
+            <div class="logo-section">
+                <img src="logo.png" alt="Nomad Browser Logo" class="app-logo" />
+                <h1>Nomad Browser</h1>
+            </div>
+            <h2 style="margin: 0; color: var(--text-light); font-size: 1.2em; font-weight: 400;">Privacy Policy</h2>
+        </div>
+        
+        <p class="date">Effective Date: September 22, 2025</p>
+        
+        <div class="highlight">
+            <h2>Welcome to Nomad Browser!</h2>
+            <p>We value your privacy above all else. Nomad Browser is designed as a privacy-first application that <strong>does not collect, store, or transmit any of your personal data</strong>. Everything stays on your device.</p>
+        </div>
+        
+        <h2>Our Privacy Commitment</h2>
+        <p><strong>Zero Data Collection:</strong> We do not collect any personal information, browsing data, device information, or analytics from our users.</p>
+        <p><strong>Local Storage Only:</strong> All your profiles, browsing history, cookies, passwords, and settings are stored exclusively on your device. This data never leaves your phone.</p>
+        <p><strong>No Servers:</strong> We do not operate any servers that store user data. There are no user accounts, cloud sync, or remote data storage.</p>
+        <p><strong>Complete Privacy:</strong> Your browsing activities across all profiles remain completely private and are never tracked, monitored, or recorded by us.</p>
+        
+        <h2>What Stays on Your Device</h2>
+        <p>The following data is stored locally on your device and is never transmitted to us or anyone else:</p>
+        <p>• Browser profiles and their configurations</p>
+        <p>• Browsing history within each profile</p>
+        <p>• Cookies and website data</p>
+        <p>• Saved passwords and login information</p>
+        <p>• Proxy settings and configurations</p>
+        <p>• All app preferences and settings</p>
+        
+        <h2>Third-Party Services</h2>
+        <p>Nomad Browser operates independently without relying on external analytics services, advertising networks, or data collection platforms. When you browse the web, you interact directly with websites - we are not involved in or aware of these interactions.</p>
+        
+        <h2>Data Security</h2>
+        <p>Since all data remains on your device, you maintain complete control over your information. Each profile operates in isolation, ensuring that data from one profile cannot be accessed by another. We recommend using your device's built-in security features (screen lock, biometric authentication) to protect your data.</p>
+        
+        <h2>No Data Sharing</h2>
+        <p><strong>We cannot share what we do not have.</strong> Since we do not collect any user data, there is nothing for us to share with third parties, advertisers, or anyone else. Your information stays exclusively with you.</p>
+        
+        <h2>Your Complete Control</h2>
+        <p>You have absolute control over all data in Nomad Browser:</p>
+        <p>• Create, modify, and delete profiles as you wish</p>
+        <p>• Manage cookies and browsing data independently for each profile</p>
+        <p>• Configure proxy settings without any external tracking</p>
+        <p>• Export or import your data using the built-in tools</p>
+        <p>• Uninstall the app to completely remove all data from your device</p>
+        
+        <h2>App Updates and Functionality</h2>
+        <p>App updates are delivered through the App Store without requiring any data from your device. The app functions entirely offline regarding data storage and management - no internet connection is required for profile management or local browsing data handling.</p>
+        
+        <h2>Updates to This Policy</h2>
+        <p>Since we don't collect data, changes to this policy will primarily be for clarity or legal compliance. Any updates will be reflected with a new effective date. Our core commitment to zero data collection will remain unchanged.</p>
+        
         <div class="contact">
-            <h2>Contáctanos</h2>
-            <p>Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos en contactvalentyn@gmail.com.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or want to verify our privacy practices, please contact us at:</p>
+            <p><a href="mailto:privacy@nomadbrowser.com" class="email-link">privacy@nomadbrowser.com</a></p>
+            <p><em>Remember: We cannot access your browsing data or profiles even if you contact us, as everything stays on your device.</em></p>
         </div>
     </div>
 </body>
